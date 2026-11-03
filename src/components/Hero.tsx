@@ -103,7 +103,7 @@ export const Hero: React.FC<HeroProps> = ({ theme }) => {
 
               {/* Direct Download of actual Mahima_Kanoujiya_Resume.pdf */}
               <a
-                href="/Mahima_Kanoujiya_Resume.pdf"
+                href="/Mahima_Kanoujiya_Resume_Updated.pdf"
                 download="Mahima_Kanoujiya_Resume.pdf"
                 className="inline-flex items-center justify-center gap-2.5 px-5 sm:px-6 py-3 sm:py-3.5 rounded-xl bg-[#0c1026] hover:bg-[#131838] border border-[#55E6FF]/30 hover:border-[#55E6FF]/70 text-[#F5F5FF] hover:text-[#55E6FF] font-medium text-xs sm:text-sm transition-all shadow-md focus:outline-none focus-visible:ring-2 focus-visible:ring-[#55E6FF] active:scale-[0.98]"
                 aria-label="Download Mahima Kanoujiya Resume PDF"

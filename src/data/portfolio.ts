@@ -88,7 +88,7 @@ export const PORTFOLIO_DATA = {
         'Centre for Advanced Studies, Dr. A.P.J. Abdul Kalam Technical University, Lucknow.',
       status: 'Undergraduate Student',
     },
-    resumePath: '/Mahima_Kanoujiya_Resume.pdf',
+    resumePath: '/Mahima_Kanoujiya_Resume_Updated.pdf',
     contact: {
       email: 'mahikanoujiya69@gmail.com',
       github: 'https://github.com/mahimakanoujiya',

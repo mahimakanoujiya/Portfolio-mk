@@ -143,7 +143,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenThemeCustomizer, onOpenRes
 
           {/* Direct Resume Download Link */}
           <a
-            href="/Mahima_Kanoujiya_Resume.pdf"
+            href="/Mahima_Kanoujiya_Resume_Updated.pdf"
             download="Mahima_Kanoujiya_Resume.pdf"
             className="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-gradient-to-r from-[#925CFF]/20 to-[#55E6FF]/20 border border-[#55E6FF]/35 hover:border-[#55E6FF] text-[#F5F5FF] hover:text-[#55E6FF] text-xs font-medium transition-all shadow-sm focus:outline-none focus-visible:ring-2 focus-visible:ring-[#55E6FF]"
             aria-label="Download Mahima Kanoujiya Resume PDF"
@@ -187,7 +187,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenThemeCustomizer, onOpenRes
             })}
             <div className="pt-4 border-t border-white/10 flex flex-col gap-2.5">
               <a
-                href="/Mahima_Kanoujiya_Resume.pdf"
+                href="/Mahima_Kanoujiya_Resume_Updated.pdf"
                 download="Mahima_Kanoujiya_Resume.pdf"
                 onClick={() => setMobileMenuOpen(false)}
                 className="w-full flex items-center justify-center gap-2 py-2.5 px-4 rounded-lg bg-gradient-to-r from-[#925CFF] to-[#55E6FF] text-[#070817] font-semibold text-sm shadow-md"

@@ -63,35 +63,35 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
         </div>
 
         {/* Content */}
-        <div className="py-5 space-y-4 text-sm text-[#CCD0EB]">
-          <div className="p-3.5 rounded-xl bg-[#070817] border border-[#55E6FF]/30 flex items-start gap-3">
+        <div className="py-4 space-y-3.5 text-sm text-[#CCD0EB]">
+          <div className="p-3 rounded-xl bg-[#070817] border border-[#55E6FF]/30 flex items-start gap-3">
             <Sparkles className="w-5 h-5 text-[#55E6FF] shrink-0 mt-0.5" />
             <div className="text-xs leading-relaxed text-[#CCD0EB]">
-              <span className="font-semibold text-[#F5F5FF] block mb-1">
-                Verified Document Ready
+              <span className="font-semibold text-[#F5F5FF] block mb-0.5">
+                Verified Document: Mahima Kanoujiya
               </span>
-              Download the official Curriculum Vitae PDF (<code className="text-[#55E6FF] font-mono">Mahima_Kanoujiya_Resume.pdf</code>) or view in a new browser tab.
+              Official Resume PDF is ready to download (<code className="text-[#55E6FF] font-mono">Mahima_Kanoujiya_Resume.pdf</code>) or view in a new browser tab.
             </div>
           </div>
 
-          <div className="space-y-2 text-xs">
-            <div className="flex justify-between py-1 border-b border-white/5">
-              <span className="text-[#CCD0EB]">Education:</span>
-              <span className="text-[#F5F5FF] font-medium text-right">
-                B.Tech CSE (AI & ML) — 1st Year
-              </span>
+          {/* Embedded PDF Preview Frame */}
+          <div className="w-full h-52 sm:h-64 rounded-xl overflow-hidden border border-[#55E6FF]/20 bg-[#070817] relative">
+            <iframe
+              src="/Mahima_Kanoujiya_Resume_Updated.pdf#toolbar=0&navpanes=0&scrollbar=0"
+              title="Mahima Kanoujiya Resume Preview"
+              className="w-full h-full border-0"
+              loading="lazy"
+            />
+          </div>
+
+          <div className="grid grid-cols-2 gap-2 text-[11px] pt-1">
+            <div className="p-2 rounded-lg bg-[#070817] border border-white/5">
+              <span className="text-[#CCD0EB] block text-[10px]">Candidate</span>
+              <span className="text-[#F5F5FF] font-medium">Mahima Kanoujiya</span>
             </div>
-            <div className="flex justify-between py-1 border-b border-white/5">
-              <span className="text-[#CCD0EB]">Institution:</span>
-              <span className="text-[#F5F5FF] font-medium text-right">
-                Centre for Advanced Studies, AKTU, Lucknow
-              </span>
-            </div>
-            <div className="flex justify-between py-1 border-b border-white/5">
-              <span className="text-[#CCD0EB]">Focus:</span>
-              <span className="text-[#55E6FF] font-medium text-right">
-                AI & ML, Python/C++, Prompt Eng., UI/UX
-              </span>
+            <div className="p-2 rounded-lg bg-[#070817] border border-white/5">
+              <span className="text-[#CCD0EB] block text-[10px]">Degree</span>
+              <span className="text-[#55E6FF] font-medium">B.Tech CSE (AI & ML)</span>
             </div>
           </div>
         </div>
@@ -99,7 +99,7 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
         {/* Actions */}
         <div className="flex flex-col sm:flex-row gap-2.5 pt-4 border-t border-white/10">
           <a
-            href="/Mahima_Kanoujiya_Resume.pdf"
+            href="/Mahima_Kanoujiya_Resume_Updated.pdf"
             download="Mahima_Kanoujiya_Resume.pdf"
             className="flex-1 inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-gradient-to-r from-[#925CFF] to-[#55E6FF] text-[#070817] font-bold text-xs transition-all shadow-md hover:scale-[1.02] active:scale-[0.98]"
             aria-label="Download Mahima Kanoujiya Resume PDF"
@@ -109,7 +109,7 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
           </a>
 
           <a
-            href="/Mahima_Kanoujiya_Resume.pdf"
+            href="/Mahima_Kanoujiya_Resume_Updated.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-[#070817] hover:bg-white/10 border border-white/20 hover:border-[#55E6FF] text-[#F5F5FF] font-medium text-xs transition-colors"
